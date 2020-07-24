@@ -17,4 +17,4 @@ dan ingat saya hanya orang bodoh yang haus akan ilmu. dan saya bukan orang yang 
 
 # Aktivitas
 
-Hmmm, saya juga bermain di beberapa platform bbbbbbbbbbbbbbbbbbbbbbbbbbb
+Hmmm, saya juga bermain di beberapa platform seperti, [HackTheBox](https://hackthebox.eu/profile/145452), [VulnHub](https://vulnhub.com), dll.
