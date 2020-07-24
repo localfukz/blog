@@ -17,8 +17,10 @@ dan ingat saya hanya orang bodoh yang haus akan ilmu. dan saya bukan orang yang 
 
 # Aktivitas
 
-Hmmm, saya juga bermain di beberapa platform seperti, [HackTheBox](https://hackthebox.eu/profile/145452), [VulnHub](https://vulnhub.com), dll.
+Hmmm, saya juga bermain di beberapa platform seperti, [HackTheBox](https://hackthebox.eu/profile/145452), [VulnHub](https://vulnhub.com), dll. atau cari aja nickname **Skofos** di beberapa platform yang kau mainin sapa tau ada saya, kalo ga ada yaudah kalo ada tapi gk aktif ya..udah mau gimana lagi.
 
 # Donate
 
-**Bitcoin**: 17GJDoKw5yomftM6KrPKnPTZRsrxcwMmwa
+sekali kali lah kau sedekah gitu sama orang, membantu orang miskin itu dapat pahala.
+
+* **Bitcoin**: 17GJDoKw5yomftM6KrPKnPTZRsrxcwMmwa
