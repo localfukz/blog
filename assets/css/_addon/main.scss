@@ -807,19 +807,18 @@ table {
     }
   }
 }
-
+.post-content a{
+    @extend %link-color;
+    @extend %link-underline;
+    &:hover {
+      @extend %link-hover-content;
+    }
+}
 .post-content {
   line-height: 1.8;
   margin-top: 2rem;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  a {
-    @extend %link-color;
-    @extend %link-underline;
-    &:hover {
-      @extend %link-hover;
-    }
-  }
   p {
     font-size: 1.08rem;
   }
