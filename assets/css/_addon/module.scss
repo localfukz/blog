@@ -18,10 +18,13 @@
   padding: .35rem .8rem;
   font-size: 95%;
 }
-
-%link-hover {
-  color: #d2603a!important;
-  border-bottom: 1px solid #d2603a;
+%link-hover{
+  color: #e83b6b!important;
+  text-decoration: none;
+}
+%link-hover-content {
+  color: #e83b6b!important;
+  border-bottom: 1px solid #e83b6b;
   text-decoration: none;
 }
 
