@@ -23,4 +23,5 @@ Hmmm, saya juga bermain di beberapa platform seperti, [HackTheBox](https://hackt
 
 sekali kali lah kau sedekah gitu sama orang, membantu orang miskin itu dapat pahala.
 
-* **Bitcoin**: 17GJDoKw5yomftM6KrPKnPTZRsrxcwMmwa
+* Bitcoin: **17GJDoKw5yomftM6KrPKnPTZRsrxcwMmwa**
+* Buymeacoffe: <https://www.buymeacoffee.com/skofos>
