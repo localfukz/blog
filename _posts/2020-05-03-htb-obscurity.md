@@ -1,6 +1,6 @@
 ---
 title: HackTheBox - Obscurity
-author: skofos
+author: Skofos
 date: 2020-05-03 11:33:00 +0800
 categories: [hackthebox]
 tags: [hackthebox, directory-enumeration, low-privilege-shell]
