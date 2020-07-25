@@ -7,6 +7,10 @@ tags: [hackthebox, directory-enumeration, low-privilege-shell]
 math: true
 ---
 
+* Note: **Ini hanya dokumentasi saya, bukan bertujuan untuk para pembaca sekalian, jika para pembaca menemukan yang dicari maka itu hanya kebetulan saja.**
+
+Yap, Obscurity udah **retired** jadi saya bisa menuliskan writeup untuk belajar / kenangan bahwa saya dulu juga pernah berjuang heheh. jadi gass aja disimak, kalo ada yang salah atau kenapa-kenapa bisa [kontak saya](https://skofos.xyz/me/). yaudahlah langsung gass aja boi.
+
 ## Nmap
 
 ```bash
