@@ -1,5 +1,5 @@
 ---
-title: VulnHub - Presidential 
+title: VulnHub - Presidential : 1 
 author: Skofos
 date: 2020-07-07 00:34:00 +0800
 categories: [vulnhub]
@@ -140,7 +140,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.16 seconds
 eh gk ada yang menarik nih, yaudahlah saya mencoba liat-liat websitenya gimana.<br/>
 
 <div style="width:100%;height:0px;position:relative;padding-bottom:56.206%;"><iframe src="https://streamable.com/e/t7i2ot?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
-
+<br/>
 nah itu tuh ada yang menarik `contact@votenow.local`, mencurigakan yaudah saya ke `/etc/hosts/` terus replace IPnya pake nama host `votenow.local`. saya coba lagi masih sama kirain bakal berubah tampilan heheh, yaudah langsung gass aja pake `GoBuster` untuk enumeration directory / file barangkali ada yang menarik.
 
 ## Gobuster
@@ -191,4 +191,15 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 ===============================================================
 2020/07/26 13:31:15 Finished
 ===============================================================
+```
+terus saya coba-coba yang menurut saya mencurigakan tadi, eh ketemu dong `/config.php` & `/config.php.bak`. emang awalnya kosong tp pas diliat pake **view-source** di browser, jadi kaya gini
+```php
+<?php
+
+$dbUser = "votebox";
+$dbPass = "casoj3FFASPsbyoRP";
+$dbHost = "localhost";
+$dbname = "votebox";
+
+?>
 ```
