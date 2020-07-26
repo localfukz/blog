@@ -209,4 +209,6 @@ kalo pake command `~# gobuster vhost votenow.local -w /usr/share/wordlists/dirbu
 root@skofos:~/Desktop/vh/presidential# gobuster vhost -u votenow.local --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt | grep "Status: 200"                                                                             
 Found: datasafe.votenow.local (Status: 200) [Size: 9503]
 ```
-kan bener bakalan ketemu hal-hal yang mengganjal gitu, lalu tanpa banyak basa basi saya coba aja.
+kan bener bakalan ketemu hal-hal yang mengganjal gitu, lalu tanpa banyak basa basi saya coba aja. dan yeah, btw sebelum ngebuka dipastikan udah disave lagi IP boxya di `/etc/hosts` pke subdomain tadi biar gk dpt Mercusuar" kampretisme.
+
+--soon--
