@@ -7,11 +7,26 @@ tags: [nmap, RCE, RCE, LFI, PhpMyAdmin]
 toc: false
 ---
 
+## NetDiscover
+yang udah pernah main vulnhub ya taulah langkah pertama ngapain `netdiscover` dullss.
+```
+ Currently scanning: 10.1.75.0/8   |   Screen View: Unique Hosts                
+                                                                                
+ 295 Captured ARP Req/Rep packets, from 4 hosts.   Total size: 17700            
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.172.2   00:--:--:--:5d:--     52    3120  VMware, Inc.                 
+ 192.168.172.132 00:--:--:54:--:15     43    2580  VMware, Inc. <-- ini cog                 
+ 192.168.172.1   00:--:--:--:00:--    193   11580  VMware, Inc.                
+ 192.168.172.254 00:--:--:ee:--:a4      7     420  VMware, Inc.
+ ```
+ya terus saya coba semua IPnya dan yah ketemu di bagian kedua
 
-# Nmap
+## Nmap
 kali ini saya makenya **RustScan** karena biar agak cepet dikit.<br/>
-`rustscan -T 1500 192.168.172.132 -- -A -sC -sV -oN presidential.scan`
 ```bash
+root@skofos:~/Desktop/vh/presidential# rustscan -T 1500 192.168.172.132 -- -A -sC -sV -oN presidential.scan
 
      _____           _    _____
     |  __ \         | |  / ____|
@@ -123,4 +138,57 @@ Nmap done: 1 IP address (1 host up) scanned in 9.16 seconds
            Raw packets sent: 25 (1.894KB) | Rcvd: 17 (1.366KB)
 ```
 eh gk ada yang menarik nih, yaudahlah saya mencoba liat-liat websitenya gimana.<br/>
+
 <div style="width:100%;height:0px;position:relative;padding-bottom:56.206%;"><iframe src="https://streamable.com/e/t7i2ot?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+nah itu tuh ada yang menarik `contact@votenow.local`, mencurigakan yaudah saya ke `/etc/hosts/` terus replace IPnya pake nama host `votenow.local`. saya coba lagi masih sama kirain bakal berubah tampilan heheh, yaudah langsung gass aja pake `GoBuster` untuk enumeration directory / file barangkali ada yang menarik.
+
+## Gobuster
+
+eh tambah menarik lagi nih keluarnya.
+```bash
+root@skofos:~/Desktop/vh/presidential# gobuster dir -u 192.168.172.132 --wordlist /usr/share/dirb/wordlists/common.txt -o presidential.gb -x php,html,bak,php.bak,txt
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://192.168.172.132
+[+] Threads:        10
+[+] Wordlist:       /usr/share/dirb/wordlists/common.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Extensions:     php,html,bak,php.bak,txt
+[+] Timeout:        10s
+===============================================================
+2020/07/26 13:31:06 Starting gobuster
+===============================================================
+/.htaccess (Status: 403)
+/.htaccess.bak (Status: 403)
+/.htaccess.php.bak (Status: 403)
+/.htaccess.txt (Status: 403)
+/.htaccess.php (Status: 403)
+/.htaccess.html (Status: 403)
+/.htpasswd (Status: 403)
+/.htpasswd.html (Status: 403)
+/.htpasswd.bak (Status: 403)
+/.htpasswd.php.bak (Status: 403)
+/.htpasswd.txt (Status: 403)
+/.htpasswd.php (Status: 403)
+/.hta (Status: 403)
+/.hta.txt (Status: 403)
+/.hta.php (Status: 403)
+/.hta.html (Status: 403)
+/.hta.bak (Status: 403)
+/.hta.php.bak (Status: 403)
+/about.html (Status: 200)
+/assets (Status: 301)
+/cgi-bin/ (Status: 403) -- ini juga
+/cgi-bin/.html (Status: 403) -- awalnya saya kira ini juga
+/config.php (Status: 200) -- mencurigakan
+/config.php.bak (Status: 200) -- ini juga
+/index.html (Status: 200)
+/index.html (Status: 200)
+===============================================================
+2020/07/26 13:31:15 Finished
+===============================================================
+```
