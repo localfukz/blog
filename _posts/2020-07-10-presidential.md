@@ -1,5 +1,5 @@
 ---
-title: VulnHub - Presidential : 1 
+title: 'VulnHub - Presidential: 1'
 author: Skofos
 date: 2020-07-07 00:34:00 +0800
 categories: [vulnhub]
