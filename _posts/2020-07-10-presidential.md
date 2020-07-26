@@ -203,3 +203,10 @@ $dbname = "votebox";
 
 ?>
 ```
+mungkin ada lagi hal yang menarik kalo `vhost`nya discan lagi. <br/>
+kalo pake command `~# gobuster vhost votenow.local -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt` bakalan rame, jadi susah untuk nyarinya. lalu saya mencoba pake command `grep "Status: 200"`.
+```bash
+root@skofos:~/Desktop/vh/presidential# gobuster vhost -u votenow.local --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt | grep "Status: 200"                                                                             
+Found: datasafe.votenow.local (Status: 200) [Size: 9503]
+```
+kan bener bakalan ketemu hal-hal yang mengganjal gitu, lalu tanpa banyak basa basi saya coba aja.
