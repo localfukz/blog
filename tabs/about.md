@@ -8,7 +8,7 @@ title: About
 # MIT License
 ---
 
-Hoii!, saya adalah seorang nolep yang setiap harinya membuang waktu didepan laptop. alah udah pada tau saya juga kan dari [halaman ini](https://skofos.xyz/me/). masa perkenalan lagi, tp yaudahlah. Komputer / PC? apa itu PC, saya tak pakai itu karena saya orang miskin tp semoga jadi kaya hehe. saya orang yang paling nub tentang **cyber-security** makanya saya buat blog ini bertujuan untuk menyimpan segala hal yang sudah saya pelajari / mendokumentasikannya di blog ini. tp gk cuman itu juga sih isi blog ini, palingan nanti ada beberapa trash seperti, meluapkan emosi & keresahan, pendapat, berbagi cerita pengalaman hidup, dll.
+Hoii!, saya `Skofos`. saya adalah seorang nolep yang setiap harinya membuang waktu didepan laptop. alah udah pada tau saya juga kan dari [halaman ini](https://skofos.xyz/me/). masa perkenalan lagi, tp yaudahlah. Komputer / PC? apa itu PC, saya tak pakai itu karena saya orang miskin tp semoga jadi kaya hehe. saya orang yang paling nub tentang **cyber-security** makanya saya buat blog ini bertujuan untuk menyimpan segala hal yang sudah saya pelajari / mendokumentasikannya di blog ini. tp gk cuman itu juga sih isi blog ini, palingan nanti ada beberapa trash seperti, meluapkan emosi & keresahan, pendapat, berbagi cerita pengalaman hidup, dll.
 
 # Cyber Security
 
