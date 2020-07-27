@@ -211,4 +211,5 @@ Found: datasafe.votenow.local (Status: 200) [Size: 9503]
 ```
 kan bener bakalan ketemu hal-hal yang mengganjal gitu, lalu tanpa banyak basa basi saya coba aja. dan yeah, btw sebelum ngebuka dipastikan udah disave lagi IP boxya di `/etc/hosts` pke subdomain tadi biar gk dpt Mercusuar" kampretisme.
 
+## Exploiting
 --soon--
