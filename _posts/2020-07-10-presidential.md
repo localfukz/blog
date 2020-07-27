@@ -4,10 +4,10 @@ author: Skofos
 date: 2020-07-07 00:34:00 +0800
 categories: [vulnhub]
 tags: [vulnhub, RCE, RCE, LFI, PhpMyAdmin]
-toc: false
+toc: true
 ---
 
-# NetDiscover
+## NetDiscover
 yang udah pernah main vulnhub ya taulah langkah pertama ngapain `netdiscover` dullss.
 ```
  Currently scanning: 10.1.75.0/8   |   Screen View: Unique Hosts                
@@ -23,7 +23,7 @@ yang udah pernah main vulnhub ya taulah langkah pertama ngapain `netdiscover` du
  ```
 ya terus saya coba semua IPnya dan yah ketemu di bagian kedua
 
-# Nmap
+## Nmap
 kali ini saya makenya **RustScan** karena biar agak cepet dikit.<br/>
 ```bash
 root@skofos:~/Desktop/vh/presidential# rustscan -T 1500 192.168.172.132 -- -A -sC -sV -oN presidential.scan
@@ -143,8 +143,7 @@ eh gk ada yang menarik nih, yaudahlah saya mencoba liat-liat websitenya gimana.<
 <br/>
 nah itu tuh ada yang menarik `contact@votenow.local`, mencurigakan yaudah saya ke `/etc/hosts/` terus replace IPnya pake nama host `votenow.local`. saya coba lagi masih sama kirain bakal berubah tampilan heheh, yaudah langsung gass aja pake `GoBuster` untuk enumeration directory / file barangkali ada yang menarik.
 
-# Gobuster
-
+## Gobuster
 eh tambah menarik lagi nih keluarnya.
 ```bash
 root@skofos:~/Desktop/vh/presidential# gobuster dir -u 192.168.172.132 --wordlist /usr/share/dirb/wordlists/common.txt -o presidential.gb -x php,html,bak,php.bak,txt
@@ -211,5 +210,5 @@ Found: datasafe.votenow.local (Status: 200) [Size: 9503]
 ```
 kan bener bakalan ketemu hal-hal yang mengganjal gitu, lalu tanpa banyak basa basi saya coba aja. dan yeah, btw sebelum ngebuka dipastikan udah disave lagi IP boxya di `/etc/hosts` pke subdomain tadi biar gk dpt Mercusuar" kampretisme.
 
-# Exploit
+## Exploit
 --soon--
