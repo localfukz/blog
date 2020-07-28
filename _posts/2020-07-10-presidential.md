@@ -2,7 +2,7 @@
 title: 'VulnHub - Presidential: 1'
 author: Skofos
 date: 2020-07-07 00:34:00 +0800
-categories: [vulnhub]
+categories: [VulnHub]
 tags: [vulnhub, RCE, RCE, LFI, PhpMyAdmin]
 toc: true
 ---
