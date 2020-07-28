@@ -1,10 +1,10 @@
 ---
-title: Getting Started
-author: Cotes Chung
+title: 'VulnHub - Infovore: 1'
+author: Skofos
 date: 2019-08-09 20:55:00 +0800
-categories: [Blogging, Tutorial]
-tags: [getting started]
-pin: true
+categories: [VulnHub]
+tags: [LFI, RCE Exploit]
+pin: false
 ---
 
 ## Prerequisites
