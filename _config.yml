@@ -20,7 +20,7 @@ description: >-                        # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'protocol://domain'
 
-author: skofos                  # change to your full name
+author: Skofos                  # change to your full name
 
 avatar: https://avatars3.githubusercontent.com/u/66356739   # support internet resources
 
@@ -32,7 +32,7 @@ twitter:
 
 social:
   name: Skofos                  # it will shows as the copyright owner in Footer
-  email: root@skofos.xyz             # change to your email address
+  email: skofos@pm.me            # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/skofos_      # change to your twitter homepage
