@@ -24,4 +24,4 @@ Hmmm, saya juga bermain di beberapa platform seperti, [HackTheBox](https://hackt
 sekali kali lah kau sedekah gitu sama orang, membantu orang miskin itu dapat pahala.
 
 * BTC: `17GJDoKw5yomftM6KrPKnPTZRsrxcwMmwa`
-* <http://donate.skofos.xyz>
+* <https://donate.skofos.xyz>
