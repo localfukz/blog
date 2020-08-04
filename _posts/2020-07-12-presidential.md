@@ -146,7 +146,7 @@ dari hasil `nmap` menurut gw sih gk ada jalan untuk melanjutkan, dan akhirnya gw
 
 pas gw `gobuster` ternyata keluarnya ya gini" aja, ada yg ganjil.
 
-```basg
+```bash
 gobuster dir -u http://votenow.local/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,php.bak,html,txt
 ```
 ![img2](https://i.ibb.co/tYyHgFn/gobuster.png)
@@ -167,14 +167,18 @@ kata gw ini file backup-an yang sempet lupa untuk dihapus / di apainlah kurang t
 
 ## Gobuster #2
 
-mungkin ada lagi hal yang menarik kalo gw scan *recon* pake host dengan command:<br/>
-`gobuster vhost votenow.local -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`.
-bakalan rame, jadi susah untuk nyarinya. lalu saya mencoba pake command `grep "Status: 200"`.
+mungkin ada lagi hal yang menarik kalo gw scan *recon* pake host dengan command yg ada dibawah ini, tapi nanti gw tau bakalan rame dan susah untuk dicari, jadi gw coba *grep*-in satu satu status dari host itu, dan akhirnya setelah gw coba gw dapetlah hal menarik dengan command `grep "Status: 200"`.
 ```bash
-root@skofos:~/Desktop/vh/presidential# gobuster vhost -u votenow.local --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt | grep "Status: 200"                                                                             
-Found: datasafe.votenow.local (Status: 200) [Size: 9503]
+gobuster vhost votenow.local -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
-kan bener bakalan ketemu hal-hal yang mengganjal gitu, lalu tanpa banyak basa basi saya coba aja. dan yeah, btw sebelum ngebuka dipastikan udah disave lagi IP boxya di `/etc/hosts` pke subdomain tadi biar gk dpt Mercusuar" kampretisme.
+```bash
+gobuster vhost -u votenow.local --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt | grep "Status: 200"                                                                             
+```
+![img4](https://i.ibb.co/tZXQF8v/datasafe.png)
 
-## Exploit
---soon--
+lalu, setelah gw dpt langsung coba. eh masuknya malah ke *mercusuar* kan gblk. jadi gw kepikiran untuk save dulu ke `/etc/hosts` dan akhirnya gw bisa masuk ke panel `PhpMyAdmin`lalu gw masuk dan pas itu gw lansung plonga plongo kek orang idiot gitu, dan tiba" gw ngeliat ke versi dari panel *PhpMyAdmin* ini langsung gw cari pake `searchsploit` siapa tau ada exploitnya / semacamnya lah. dan yah...
+
+# Exploit
+## Local File Inclusion
+
+
