@@ -726,15 +726,24 @@ a {
   }
   .categories &,
   #page-category &,
-  #tags &,
-  #archives & {
+  #tags & {
     &:not(:hover) {
       @extend %no-bottom-border;
     }
-    &:hover{
+}
+#archives & {
+    &:not(:hover) {
+      @extend %no-bottom-border;
+    }
+    a{
+      &:hover{
       border-bottom: none;
     }
   }
+    &:hover{
+      border-bottom: none;
+    }
+}
 
 } // a
 
