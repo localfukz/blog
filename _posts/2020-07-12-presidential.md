@@ -139,6 +139,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.20 seconds
            Raw packets sent: 25 (1.894KB) | Rcvd: 17 (1.366KB)
 ```
 dari hasil `nmap` menurut gw sih gk ada jalan untuk melanjutkan, dan akhirnya gw putus asa dan mencoba untuk melihat-lihat website box ini. karena gw lola gw baru *ngeh* pas ngeliat email `contact@votenow.local` gw liat-liat tuh, gw kaget lah ini ada domainnya ajg jadi gw coba untuk memasukkan IP HOST dan domain box ini ke `/etc/hosts` habis itu gw *recon* lagi pake `gobuster` sapa tau ada yang aneh atau ngga.
+
 ![img2](https://i.ibb.co/0jNR0cy/hosts.png)
 
 ## Gobuster #1
