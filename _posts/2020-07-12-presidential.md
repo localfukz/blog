@@ -1,7 +1,7 @@
 ---
 title: 'VulnHub - Presidential: 1'
 author: Skofos
-date: 2020-07-07 00:34:00 +0800
+date: 2020-07-12
 categories: [VulnHub]
 tags: [vulnhub, RCE, LFI, PhpMyAdmin]
 toc: true
@@ -13,13 +13,17 @@ toc: true
 # Enumeration
 ## Netdiscover
 
-![img](https://blog.skofos.xyz/assets/img/vh/presidential/netdiscover.jpg)
+`netdiscover -i eth0`
+
+![img](https://i.ibb.co/BT08BX6/netdiscover.jpg)
 
 gw coba satu" dan akhirnya ketemu juga `192.168.172.134`.
 
 # Recon
 ## Nmap
-kali ini gw makenya **RustScan** karena biar agak cepet dikit.<br/>
+
+kali ini gw makenya [RustScan](https://github.com/RustScan/RustScan) karena biar agak cepet dikit.<br/>
+
 ```bash
 root@skofos]:~/Desktop/vh/presidential# rustscan -T 1500 192.168.172.134 -- -A -sC -sV -oN presidential.scan
 
@@ -135,17 +139,19 @@ Nmap done: 1 IP address (1 host up) scanned in 9.20 seconds
            Raw packets sent: 25 (1.894KB) | Rcvd: 17 (1.366KB)
 ```
 dari hasil `nmap` menurut gw sih gk ada jalan untuk melanjutkan, dan akhirnya gw putus asa dan mencoba untuk melihat-lihat website box ini. karena gw lola gw baru *ngeh* pas ngeliat email `contact@votenow.local` gw liat-liat tuh, gw kaget lah ini ada domainnya ajg jadi gw coba untuk memasukkan IP HOST dan domain box ini ke `/etc/hosts` habis itu gw *recon* lagi pake `gobuster` sapa tau ada yang aneh atau ngga.
-![img2](https://blog.skofos.xyz/assets/img/vh/presidential/hosts.png)
+![img2](https://i.ibb.co/0jNR0cy/hosts.png)
 
 ## Gobuster #1
 
 pas gw `gobuster` ternyata keluarnya ya gini" aja, ada yg ganjil.
-```sh
+
+```basg
 gobuster dir -u http://votenow.local/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,php.bak,html,txt
 ```
-![img2](https://blog.skofos.xyz/assets/img/vh/presidential/gobuster.png)
+![img2](https://i.ibb.co/tYyHgFn/gobuster.png)
 
 itu kenapa ada `config.php` & `config.php.bak`, pas gw buka buka yg *config.php* isinya cuman kosong gitu" aja tapi pas gw coba buka *config.php.bak* ternyata kosong jg dan begitu gw view-source ternyata isinya begini wkwkwk.
+
 ```php
 <?php
 
