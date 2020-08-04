@@ -7,6 +7,9 @@ tags: [vulnhub, RCE, LFI, PhpMyAdmin]
 toc: true
 ---
 
+
+> yang pertama-tama gw mau bilang, semua tulisan diblog ini entah itu writeup, security stuff, curhatan, dll. bukan untuk para pembaca sekalian, tapi untuk diri gw sendiri dan gw ingin mendokumentasikannya disini, jikalau nanti gw butuh atau ingin membacanya dikemudian hari. jika para pembaca menemukan apa yang pembaca cari maka itu hanya kebetulan saja. dan juga jika ini adalah writeup CTF atau semacamnya dan anda menganggap ini sebagai spoiler/bocoran mohon untuk segera meninggalkan writeup ini. sekian terima kasih.
+
 # Enumeration
 ## Netdiscover
 
