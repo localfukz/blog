@@ -18,7 +18,7 @@
   }
 
   [dark-mode-invisible] {
-    display: $dark-display;
+    display: $dark-display;#
   }
 }
 
@@ -730,6 +730,9 @@ a {
   #archives & {
     &:not(:hover) {
       @extend %no-bottom-border;
+    }
+    &:hover{
+      border-bottom: none;
     }
   }
 
