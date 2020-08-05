@@ -184,7 +184,11 @@ lalu setelah gw nyari itu exploit gw ketemu `user:password` yang terenkripsi.
 
 ![img6](https://i.ibb.co/kqZDD1n/admin.png)
 
-lalu gw crack lah pake `john` password cracking paling terkenal katanya.
+lalu gw crack lah pake `john` password cracking paling terkenal katanya. dan gw udah coba berkali-kali crack pake *dictionary wordlist* yg paling terkenal yaitu *rockyou.txt* lama beut cog ngecracknya wkwkwk, jadi gw pake single wordlist yg sedeng aja di path `/usr/share/john/password.lst` biar cepet.
+
+![img7](https://i.ibb.co/nC2TCzW/password.png)
+
+Dan password telah ter-crack. `Stella` merek apaan dah pewangi ruangan ya? wkwkwk. dan lanjut ke exploit buat dpt user flag.
 
 ![]
 # Exploit
@@ -194,9 +198,10 @@ menurut [exploit](https://www.exploit-db.com/exploits/44928)nya pertama tama gw 
 ```php
 select '<?php phpInfo();exit;?>'
 ```
+![img8](https://i.ibb.co/7g8swxb/phpserverpng.png)
 
 terus katanya masukin juga payload buat baca session file gitu.
 ```php
 http://datasafe.votenow.local/index.php?target=db_sql.php%253f/../../../../../../../../var/lib/php/sessions/sess_(cookie session, kalo g tau letak cookie pake extension di browser namanya CookieEditor)
 ```
-pas gw masukin gitu, keluarlah cookie
+
