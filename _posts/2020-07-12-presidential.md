@@ -233,7 +233,18 @@ yaudah habis itu gw nyalain *netcat* dgn port 1337 seperti yg gw buat di *revers
 
 # Privilege Escalation
 
-pas gw baca itu ada *new command* aka perintah baru atau apa itu, untuk membackup suatu file dan meng-compress tanpa perlu ijin root. terus gw googling (tp gw makenya duckduckgo :v) dan gw lupa sumbernya dari mana nanti kalo ketemu gw taro sini, jadi gw liat pake command `getcap -r / 2>/dev/null`. 
+pas gw baca itu ada *new command* aka perintah baru atau apa itu, untuk membackup suatu file dan meng-compress tanpa perlu ijin root. terus gw googling dan gw lupa sumbernya dari mana nanti kalo ketemu gw taro sini, jadi gw liat pake command `getcap -r / 2>/dev/null`. 
 
 ![getcap](https://i.ibb.co/557vN7r/escalation.png)
+
+dan ketemulah `tarS` yg gw bilang tadi untuk compress tanpa ijin root/jadi root. habis tak compress langsung gw decompress biar filenya bisa dibaca.
+dan yeah, gw dapet itu `id_rsa` biar bisa masuk akses lewat `ssh` menjadi bagian root.
+
+![id_rsa](https://i.ibb.co/VjZLcGx/id-rsa.png)
+
+![root](https://i.ibb.co/Kysy52R/root.png)
+
+jadi seperti itu, terima kasih mau baca tulisan trash beginian wkwkwk.
+
+
 
