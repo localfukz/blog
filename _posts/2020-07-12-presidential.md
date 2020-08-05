@@ -180,9 +180,13 @@ lalu, setelah gw dpt langsung coba. eh masuknya malah ke *mercusuar* kan gblk. j
 
 ![img5](https://i.ibb.co/qRKkgbY/searchsploit.png)
 
-lalu setelah gw masuk ke panelnya gw dapet sesuatu menarik yaitu, nama user dan password yang terenkripsi (bcrypt / blowfish).
+lalu setelah gw nyari itu exploit gw ketemu `user:password` yang terenkripsi.
 
+![img6](https://i.ibb.co/kqZDD1n/admin.png)
 
+lalu gw crack lah pake `john` password cracking paling terkenal katanya.
+
+![]
 # Exploit
 ## Local File Inclusion
 
