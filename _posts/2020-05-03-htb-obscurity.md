@@ -7,9 +7,8 @@ tags: [hackthebox, directory enumeration, low privilege shell]
 math: true
 ---
 
-* Note: **Ini hanya dokumentasi saya, bukan bertujuan untuk para pembaca sekalian, jika para pembaca menemukan yang dicari maka itu hanya kebetulan saja.**
 
-Yap, Obscurity udah **retired** jadi saya bisa menuliskan writeup untuk belajar / kenangan bahwa saya dulu juga pernah berjuang heheh. jadi gass aja disimak, kalo ada yang salah atau kenapa-kenapa bisa [kontak saya](https://skofos.xyz/me/). yaudahlah langsung gass aja boi.
+> yang pertama-tama gw mau bilang, semua tulisan diblog ini entah itu writeup, security stuff, curhatan, dll. bukan untuk para pembaca sekalian, tapi untuk diri gw sendiri dan gw ingin mendokumentasikannya disini, jikalau nanti gw butuh atau ingin membacanya dikemudian hari. jika para pembaca menemukan apa yang pembaca cari maka itu hanya kebetulan saja. dan juga jika ini adalah writeup CTF atau semacamnya dan anda menganggap ini sebagai spoiler/bocoran mohon untuk segera meninggalkan writeup ini. sekian terima kasih.
 
 ## Nmap
 
