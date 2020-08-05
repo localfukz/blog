@@ -244,7 +244,9 @@ dan yeah, gw dapet itu `id_rsa` biar bisa masuk akses lewat `ssh` menjadi bagian
 
 ![root](https://i.ibb.co/Kysy52R/root.png)
 
-jadi seperti itu, terima kasih mau baca tulisan trash beginian wkwkwk.
+yaah, gw copy itu `id_rsa` dengan command `chmod 600 id_rsa` biar bisa ke akses, btw itu kenapa ada port 2082? kalo diperhatikan saat gw *recon* pake `nmap` kan disitu tertulis *port* untuk `ssh` yaitu 2082, jadi gw pake itu biar bisa masuk. okelaaah.
+
+makasih yang dah mau baca, kalo ada pembaca yang sedang belajar tentang *pentesting* semoga bermanfaat, dan jika pembaca saya orang mahir please lu minggat ajg, bocoran tau ngga wkwkwk.
 
 
 
