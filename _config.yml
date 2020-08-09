@@ -8,9 +8,9 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Skofos                          # the main title
+title: skofos's blog                         # the main title
 
-tagline: Ga ada yang penting.  # it will display as the sub-title
+tagline: nothing to see here.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   hanya sebuah dokumentasi, curhatan,
@@ -22,17 +22,17 @@ url: 'protocol://domain'
 
 author: Skofos                  # change to your full name
 
-avatar: https://blog.skofos.xyz/assets/img/lmao.gif   # support internet resources
+avatar: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fl2SpN0gAfO6yfw4A8%2Fgiphy.gif&f=1&nofb=1   # support internet resources
 
 github:
-  username: Skofos             # change to your github username
+  username: skofos             # change to your github username
 
 twitter:
   username: skofos_            # change to your twitter username
 
 social:
-  name: Skofos                  # it will shows as the copyright owner in Footer
-  email: skofos@pm.me            # change to your email address
+  name: skofos                  # it will shows as the copyright owner in Footer
+  email: root@skofos.xyz            # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/skofos_      # change to your twitter homepage
@@ -78,7 +78,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: dual
+theme_mode: dark
 
 # boolean type, global switch for ToC in posts.
 toc: true
