@@ -8,7 +8,7 @@ title: About
 # MIT License
 ---
 
-Hoii!, gw `Skofos`.
+Hoalo!, nama gw `Skofos`. nama yang tak ada artinya.
 
 # Donate
 
