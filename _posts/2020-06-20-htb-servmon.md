@@ -7,7 +7,7 @@ tags: [ftp, nsclient++, directory traversal]
 ---
 
 
-#Recon
+# Recon
 ## Nmap
 ```bash
 # Nmap 7.80 scan initiated Sat Apr 11 22:00:41 2020 as: nmap -sC -sV -v -oA nmap/small 10.10.10.184
