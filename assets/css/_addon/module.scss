@@ -24,7 +24,7 @@
 }
 %link-hover-content {
   color: #e83b6b!important;
-  border-bottom: 1px solid #e83b6b;
+  border-bottom: 1px solid var(--link-underline-color);
   text-decoration: none;
 }
 
