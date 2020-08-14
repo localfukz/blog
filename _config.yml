@@ -8,9 +8,9 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: skofos's blog                         # the main title
+title: skofos                         # the main title
 
-tagline: nothing to see here.  # it will display as the sub-title
+tagline: x86-64.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   hanya sebuah dokumentasi, curhatan,
@@ -20,7 +20,7 @@ description: >-                        # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'protocol://domain'
 
-author: Skofos                  # change to your full name
+author: skofos                  # change to your full name
 
 avatar: https://avatars0.githubusercontent.com/u/44630640?s=460&u=44e723b62ba3ae7338ed11f1f9b9ac99fcf5b6fb&v=4   # support internet resources
 
@@ -28,7 +28,7 @@ github:
   username: skofos             # change to your github username
 
 twitter:
-  username: skofos_            # change to your twitter username
+  username: skofoz            # change to your twitter username
 
 social:
   name: skofos                  # it will shows as the copyright owner in Footer
