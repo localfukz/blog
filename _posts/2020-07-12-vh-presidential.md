@@ -8,8 +8,6 @@ toc: true
 ---
 
 
-fixed
-
 **[Presidential](https://www.vulnhub.com/entry/presidential-1,500/)**
 
 # Enumeration
