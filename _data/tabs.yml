@@ -6,20 +6,20 @@
 
 
 -
-  name: Home
+  name: home
   icon: "fas fa-home"
 -
-  name: Categories
+  name: categories
   icon: "fas fa-stream"
   path: tabs
   url: categories
 -
-  name: "Archives"
+  name: "archives"
   path: tabs
   url: archives
   icon: "fas fa-archive"
 -
-  name: "About"
+  name: "about"
   icon: "fas fa-info"
   path: tabs
   url: about
