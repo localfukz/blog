@@ -85,7 +85,7 @@ $sidebar-display: "sidebar-display";
   .site-title {
     text-align: center;
     a {
-      // color: var(--site-title-color);
+      color: #e83b6b;
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: .5px;
@@ -99,7 +99,7 @@ $sidebar-display: "sidebar-display";
   .site-subtitle {
     font-size: 95%;
     text-align: center;
-    color: #828282;
+    color: white;
     line-height: 1.2rem;
     word-spacing: 1px;
     margin: .5rem 1.5rem 2rem 1.5rem;
@@ -234,7 +234,7 @@ $sidebar-display: "sidebar-display";
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    border: 2px solid #b6b6b6;
+    border: 2px solid #e83b6b;
     overflow: hidden;
     transform: translateZ(0); // fixed the zoom in Safari
     -webkit-transition: border-color 0.35s ease-in-out;
